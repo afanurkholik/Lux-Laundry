@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Lux Laundry Salatiga | Layanan Laundry Keluarga Terpercaya & Gratis Antar Jemput</title>
     <meta name="description" content="Lux Laundry Salatiga. Layanan cuci setrika profesional, gratis antar jemput area Salatiga, Bringin, Tingkir. Ditimbang setelah bersih, transparan & terpercaya.">
     
@@ -72,6 +72,15 @@
             from { transform: translateY(0); }
             to { transform: translateY(-8px); }
         }
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            html {
+                font-size: 14px;
+            }
+            .mobile-pb-safe {
+                padding-bottom: env(safe-area-inset-bottom, 20px);
+            }
+        }
     </style>
 </head>
 <body class="font-body text-slate-700 bg-surface antialiased overflow-x-hidden">
@@ -139,26 +148,26 @@
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-light text-primary font-semibold text-sm mb-6 border border-blue-100">
                         <i class="ph-fill ph-star text-accent"></i> Laundry Keluarga Terpercaya di Salatiga
                     </div>
-                    <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                    <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
                         Baju Bersih, <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Hidup Lebih Mudah.</span>
                     </h1>
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
+                    <p class="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
                         Layanan laundry profesional dengan sentuhan keluarga. <strong>Gratis antar jemput</strong> hingga area Bringin & Tingkir. Ditimbang setelah bersih, transparan dan adil.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="https://wa.me/6285700474280?text=Halo%20Admin%20Lux%20Laundry,%20saya%20mau%20pesan%20laundry%20dari%20alamat..." 
                            target="_blank"
-                           class="inline-flex justify-center items-center px-8 py-4 rounded-2xl bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all shadow-soft hover:shadow-glow hover:-translate-y-1">
+                           class="inline-flex justify-center items-center px-6 sm:px-8 py-4 rounded-2xl bg-primary hover:bg-primary-dark text-white font-bold text-base sm:text-lg transition-all shadow-soft hover:shadow-glow hover:-translate-y-1">
                             <i class="ph-bold ph-whatsapp-logo mr-2 text-xl"></i> Pesan via WhatsApp
                         </a>
-                        <a href="#layanan" class="inline-flex justify-center items-center px-8 py-4 rounded-2xl border-2 border-slate-200 hover:border-primary text-slate-700 hover:text-primary font-bold text-lg transition-all hover:bg-primary-light">
+                        <a href="#layanan" class="inline-flex justify-center items-center px-6 sm:px-8 py-4 rounded-2xl border-2 border-slate-200 hover:border-primary text-slate-700 hover:text-primary font-bold text-base sm:text-lg transition-all hover:bg-primary-light">
                             Lihat Harga
                         </a>
                     </div>
                     
                     <!-- Trust Badges -->
-                    <div class="mt-10 flex items-center gap-6 text-sm text-slate-500 font-medium">
+                    <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-sm text-slate-500 font-medium">
                         <div class="flex items-center gap-2">
                             <i class="ph-fill ph-check-circle text-green-500 text-xl"></i> Gratis Antar Jemput
                         </div>
@@ -171,7 +180,7 @@
                 <!-- Image/Illustration -->
                 <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-                        <img src="images/hero.jpg" alt="Tumpukan baju bersih rapi Lux Laundry"
+                        <img src="images/hero.jpg" 
                              alt="Tumpukan baju bersih rapi Lux Laundry" 
                              class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700">
                         <!-- Floating Card -->
@@ -191,47 +200,47 @@
     </section>
 
     <!-- 3. LAYANAN & HARGA -->
-    <section id="layanan" class="py-20 bg-white relative">
+    <section id="layanan" class="py-16 sm:py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-4">Layanan & Harga Transparan</h2>
-                <p class="text-slate-600 text-lg">Harga terjangkau dengan kualitas premium. Tidak ada biaya tersembunyi.</p>
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">Layanan & Harga Transparan</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Harga terjangkau dengan kualitas premium. Tidak ada biaya tersembunyi.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
                 <!-- Card 1 -->
-                <div class="group relative bg-surface rounded-3xl p-8 border border-slate-100 shadow-soft hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="group relative bg-surface rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-soft hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="absolute top-0 right-0 bg-accent text-slate-800 text-xs font-bold px-4 py-1 rounded-bl-2xl rounded-tr-3xl">Terlaris</div>
-                    <div class="w-16 h-16 bg-primary-light rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                        <i class="ph-fill ph-t-shirt text-3xl"></i>
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-primary-light rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ph-fill ph-t-shirt text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="font-heading text-2xl font-bold text-slate-900 mb-2">Cuci Setrika</h3>
-                    <p class="text-slate-500 mb-6">Layanan lengkap cuci, kering, dan setrika rapi. Wangi tahan lama dan siap pakai.</p>
-                    <div class="flex items-baseline gap-1 mb-8">
-                        <span class="text-4xl font-heading font-extrabold text-primary">Rp 6.000</span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-900 mb-2">Cuci Setrika</h3>
+                    <p class="text-slate-500 mb-6 text-sm sm:text-base">Layanan lengkap cuci, kering, dan setrika rapi. Wangi tahan lama dan siap pakai.</p>
+                    <div class="flex items-baseline gap-1 mb-6 sm:mb-8">
+                        <span class="text-3xl sm:text-4xl font-heading font-extrabold text-primary">Rp 6.000</span>
                         <span class="text-slate-500 font-medium">/kg</span>
                     </div>
                     <a href="https://wa.me/6285700474280?text=Halo%20Admin%20Lux%20Laundry,%20saya%20mau%20pesan%20layanan%20Cuci%20Setrika..." 
                        target="_blank"
-                       class="block w-full text-center bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl transition-all shadow-md hover:shadow-glow">
+                       class="block w-full text-center bg-primary hover:bg-primary-dark text-white font-bold py-3 sm:py-3.5 rounded-xl transition-all shadow-md hover:shadow-glow text-sm sm:text-base">
                         Pesan Layanan Ini
                     </a>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group relative bg-surface rounded-3xl p-8 border border-slate-100 shadow-soft hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-500 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="ph-fill ph-steam text-3xl"></i>
+                <div class="group relative bg-surface rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-soft hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ph-fill ph-steam text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="font-heading text-2xl font-bold text-slate-900 mb-2">Setrika Saja</h3>
-                    <p class="text-slate-500 mb-6">Anda cuci sendiri di rumah, biarkan kami yang menyetrikanya hingga licin dan rapi.</p>
-                    <div class="flex items-baseline gap-1 mb-8">
-                        <span class="text-4xl font-heading font-extrabold text-primary">Rp 4.500</span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-900 mb-2">Setrika Saja</h3>
+                    <p class="text-slate-500 mb-6 text-sm sm:text-base">Anda cuci sendiri di rumah, biarkan kami yang menyetrikanya hingga licin dan rapi.</p>
+                    <div class="flex items-baseline gap-1 mb-6 sm:mb-8">
+                        <span class="text-3xl sm:text-4xl font-heading font-extrabold text-primary">Rp 4.500</span>
                         <span class="text-slate-500 font-medium">/kg</span>
                     </div>
                     <a href="https://wa.me/6285700474280?text=Halo%20Admin%20Lux%20Laundry,%20saya%20mau%20pesan%20layanan%20Setrika%20Saja..." 
                        target="_blank"
-                       class="block w-full text-center bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3.5 rounded-xl transition-all">
+                       class="block w-full text-center bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 sm:py-3.5 rounded-xl transition-all text-sm sm:text-base">
                         Pesan Layanan Ini
                     </a>
                 </div>
@@ -240,43 +249,43 @@
     </section>
 
     <!-- 4. KEUNGGULAN KAMI (Interaktif) -->
-    <section id="keunggulan" class="py-20 bg-primary-light/30">
+    <section id="keunggulan" class="py-16 sm:py-20 bg-primary-light/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mengapa Memilih Lux Laundry?</h2>
-                <p class="text-slate-600 text-lg">Kami mengutamakan kenyamanan, kepercayaan, dan kepuasan pelanggan keluarga.</p>
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mengapa Memilih Lux Laundry?</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Kami mengutamakan kenyamanan, kepercayaan, dan kepuasan pelanggan keluarga.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Keunggulan 1 -->
-                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-100 cursor-default" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-primary mb-6 icon-bounce transition-transform">
-                        <i class="ph-fill ph-truck text-3xl"></i>
+                <div class="group bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-100 cursor-default" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-primary mb-6 icon-bounce transition-transform">
+                        <i class="ph-fill ph-truck text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Gratis Antar Jemput</h3>
-                    <p class="text-slate-600 leading-relaxed">
+                    <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 mb-3">Gratis Antar Jemput</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
                         Customer terjauh? Tenang! Kami melayani area <strong>Salatiga, Bringin, Tingkir</strong> & sekitarnya tanpa biaya tambahan.
                     </p>
                 </div>
 
                 <!-- Keunggulan 2 -->
-                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-100 cursor-default" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 mb-6 icon-bounce transition-transform">
-                        <i class="ph-fill ph-mosque text-3xl"></i>
+                <div class="group bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-100 cursor-default" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 mb-6 icon-bounce transition-transform">
+                        <i class="ph-fill ph-mosque text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Gratis Mukena & Sajadah</h3>
-                    <p class="text-slate-600 leading-relaxed">
+                    <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 mb-3">Gratis Mukena & Sajadah</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
                         Bonus spesial untuk pelanggan Muslim kami. Kami bersihkan perlengkapan ibadah Anda dengan deterjen khusus yang suci dan wangi.
                     </p>
                 </div>
 
                 <!-- Keunggulan 3 -->
-                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-100 cursor-default" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6 icon-bounce transition-transform">
-                        <i class="ph-fill ph-scales text-3xl"></i>
+                <div class="group bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-100 cursor-default" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6 icon-bounce transition-transform">
+                        <i class="ph-fill ph-scales text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Ditimbang Setelah Bersih</h3>
-                    <p class="text-slate-600 leading-relaxed">
+                    <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 mb-3">Ditimbang Setelah Bersih</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
                         Transparan & adil. Anda hanya membayar berat baju bersih Anda. Tidak ada kecurangan berat atau biaya siluman.
                     </p>
                 </div>
@@ -285,43 +294,43 @@
     </section>
 
     <!-- 5. CARA PESAN -->
-    <section id="cara-pesan" class="py-20 bg-white">
+    <section id="cara-pesan" class="py-16 sm:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-4">Cara Pesan Sangat Mudah</h2>
-                <p class="text-slate-600 text-lg">Hanya 3 langkah sederhana, baju bersih antar ke rumah Anda.</p>
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">Cara Pesan Sangat Mudah</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Hanya 3 langkah sederhana, baju bersih antar ke rumah Anda.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 relative">
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8 relative">
                 <!-- Connecting Line (Desktop Only) -->
                 <div class="hidden md:block absolute top-1/4 left-0 w-full h-1 bg-slate-100 -z-10"></div>
 
                 <!-- Step 1 -->
                 <div class="relative text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-3xl font-heading font-bold shadow-glow mb-6 border-4 border-white">1</div>
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl sm:text-3xl font-heading font-bold shadow-glow mb-6 border-4 border-white">1</div>
                     <div class="bg-surface p-6 rounded-2xl border border-slate-100">
-                        <i class="ph-fill ph-whatsapp-logo text-4xl text-green-500 mb-4"></i>
-                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Chat WhatsApp</h3>
+                        <i class="ph-fill ph-whatsapp-logo text-3xl sm:text-4xl text-green-500 mb-4"></i>
+                        <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 mb-2">Chat WhatsApp</h3>
                         <p class="text-slate-600 text-sm">Hubungi admin kami, sampaikan alamat dan jumlah perkiraan laundry.</p>
                     </div>
                 </div>
 
                 <!-- Step 2 -->
                 <div class="relative text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-3xl font-heading font-bold shadow-glow mb-6 border-4 border-white">2</div>
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl sm:text-3xl font-heading font-bold shadow-glow mb-6 border-4 border-white">2</div>
                     <div class="bg-surface p-6 rounded-2xl border border-slate-100">
-                        <i class="ph-fill ph-moped text-4xl text-primary mb-4"></i>
-                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Kami Jemput</h3>
+                        <i class="ph-fill ph-moped text-3xl sm:text-4xl text-primary mb-4"></i>
+                        <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 mb-2">Kami Jemput</h3>
                         <p class="text-slate-600 text-sm">Kurir kami akan menjemput laundry Anda langsung ke depan rumah.</p>
                     </div>
                 </div>
 
                 <!-- Step 3 -->
                 <div class="relative text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-3xl font-heading font-bold shadow-glow mb-6 border-4 border-white">3</div>
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl sm:text-3xl font-heading font-bold shadow-glow mb-6 border-4 border-white">3</div>
                     <div class="bg-surface p-6 rounded-2xl border border-slate-100">
-                        <i class="ph-fill ph-sparkle text-4xl text-accent mb-4"></i>
-                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Baju Bersih Diantar</h3>
+                        <i class="ph-fill ph-sparkle text-3xl sm:text-4xl text-accent mb-4"></i>
+                        <h3 class="font-heading text-lg sm:text-xl font-bold text-slate-900 mb-2">Baju Bersih Diantar</h3>
                         <p class="text-slate-600 text-sm">Dalam 1-2 hari, baju bersih, wangi, dan rapi diantar kembali ke Anda.</p>
                     </div>
                 </div>
@@ -330,55 +339,55 @@
     </section>
 
     <!-- 6. TESTIMONI PELANGGAN -->
-    <section class="py-20 bg-surface">
+    <section class="py-16 sm:py-20 bg-surface">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-4">Apa Kata Mereka?</h2>
-                <p class="text-slate-600 text-lg">Kepercayaan pelanggan Salatiga adalah prioritas utama kami.</p>
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">Apa Kata Mereka?</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Kepercayaan pelanggan Salatiga adalah prioritas utama kami.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Testi 1 -->
-                <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-soft border border-slate-100" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex text-accent mb-4">
                         <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
-                    <p class="text-slate-600 mb-6 italic">"Sangat membantu buat saya yang bekerja kantoran. Dijemput dan diantar tepat waktu. Hasil setrikanya juga sangat rapi, wangi tahan lama!"</p>
+                    <p class="text-slate-600 mb-6 italic text-sm sm:text-base">"Sangat membantu buat saya yang bekerja kantoran. Dijemput dan diantar tepat waktu. Hasil setrikanya juga sangat rapi, wangi tahan lama!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">IS</div>
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-sm sm:text-base">IS</div>
                         <div>
-                            <p class="font-heading font-bold text-slate-900">Ibu Sari</p>
-                            <p class="text-sm text-slate-500">Ibu Rumah Tangga, Tingkir</p>
+                            <p class="font-heading font-bold text-slate-900 text-sm sm:text-base">Ibu Sari</p>
+                            <p class="text-xs sm:text-sm text-slate-500">Ibu Rumah Tangga, Tingkir</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testi 2 -->
-                <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-soft border border-slate-100" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex text-accent mb-4">
                         <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
-                    <p class="text-slate-600 mb-6 italic">"Harganya masuk akal buat kantong mahasiswa. Yang paling saya suka itu transparansi penimbangan setelah bersih. Jujur dan recommended!"</p>
+                    <p class="text-slate-600 mb-6 italic text-sm sm:text-base">"Harganya masuk akal buat kantong mahasiswa. Yang paling saya suka itu transparansi penimbangan setelah bersih. Jujur dan recommended!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">BP</div>
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-sm sm:text-base">BP</div>
                         <div>
-                            <p class="font-heading font-bold text-slate-900">Budi Prasetyo</p>
-                            <p class="text-sm text-slate-500">Mahasiswa, UKSW Salatiga</p>
+                            <p class="font-heading font-bold text-slate-900 text-sm sm:text-base">Budi Prasetyo</p>
+                            <p class="text-xs sm:text-sm text-slate-500">Mahasiswa, UKSW Salatiga</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testi 3 -->
-                <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-soft border border-slate-100" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex text-accent mb-4">
                         <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
-                    <p class="text-slate-600 mb-6 italic">"Langganan dari sini ke Bringin tetap gratis antar jemput. Pelayanan ramah khas keluarga, mukena juga dibersihkan dengan baik. Terima kasih Lux Laundry!"</p>
+                    <p class="text-slate-600 mb-6 italic text-sm sm:text-base">"Langganan dari sini ke Bringin tetap gratis antar jemput. Pelayanan ramah khas keluarga, mukena juga dibersihkan dengan baik. Terima kasih Lux Laundry!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">PJ</div>
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-sm sm:text-base">PJ</div>
                         <div>
-                            <p class="font-heading font-bold text-slate-900">Keluarga Pak Joko</p>
-                            <p class="text-sm text-slate-500">Warga Bringin</p>
+                            <p class="font-heading font-bold text-slate-900 text-sm sm:text-base">Keluarga Pak Joko</p>
+                            <p class="text-xs sm:text-sm text-slate-500">Warga Bringin</p>
                         </div>
                     </div>
                 </div>
@@ -387,27 +396,27 @@
     </section>
 
     <!-- 7. LOKASI KAMI -->
-    <section id="lokasi" class="py-20 bg-white">
+    <section id="lokasi" class="py-16 sm:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 <div data-aos="fade-right">
-                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-4">Temukan Kami di Salatiga</h2>
-                    <p class="text-slate-600 text-lg mb-8">Kunjungi outlet kami atau manfaatkan layanan antar jemput gratis untuk area sekitar.</p>
+                    <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">Temukan Kami di Salatiga</h2>
+                    <p class="text-slate-600 text-base sm:text-lg mb-6 sm:mb-8">Kunjungi outlet kami atau manfaatkan layanan antar jemput gratis untuk area sekitar.</p>
                     
-                    <div class="space-y-6">
+                    <div class="space-y-4 sm:space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
-                                <i class="ph-fill ph-map-pin text-2xl"></i>
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="ph-fill ph-map-pin text-xl sm:text-2xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-heading font-bold text-slate-900">Alamat Outlet</h4>
-                                <p class="text-slate-600">Salatiga, Jawa Tengah (Dekat area pusat kota, mudah dijangkau)</p>
+                                <h4 class="font-heading font-bold text-slate-900 text-base sm:text-lg">Alamat Outlet</h4>
+                                <p class="text-slate-600 text-sm sm:text-base">Salatiga, Jawa Tengah (Dekat area pusat kota, mudah dijangkau)</p>
                             </div>
                         </div>
                        
 
                         <a href="https://maps.app.goo.gl/oump8BnaNh2LGmiM7" target="_blank" 
-                           class="inline-flex items-center gap-2 mt-4 text-primary font-bold hover:text-primary-dark transition-colors">
+                           class="inline-flex items-center gap-2 mt-4 text-primary font-bold hover:text-primary-dark transition-colors text-sm sm:text-base">
                             Buka di Google Maps <i class="ph-bold ph-arrow-right"></i>
                         </a>
                     </div>
@@ -418,7 +427,7 @@
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.344932172612!2d110.50350617477424!3d-7.315093392692911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a783df44e14f7%3A0x35ae91ccc23f2820!2sLux%20Laundry%20Salatiga%20-%20Gratis%20Antar%20Jemput!5e0!3m2!1sen!2sid!4v1789910177832!5m2!1sen!2sid" 
                             width="100%" 
-                            height="400" 
+                            height="300" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
@@ -432,7 +441,7 @@
     </section>
 
     <!-- 8. FOOTER -->
-    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800 mobile-pb-safe">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-2">
@@ -440,7 +449,7 @@
                         <i class="ph-fill ph-t-shirt text-3xl text-primary"></i>
                         <span class="font-heading font-bold text-2xl">Lux Laundry</span>
                     </div>
-                    <p class="text-slate-400 max-w-sm mb-6">Solusi laundry keluarga modern di Salatiga. Bersih, wangi, rapi, dan diantar langsung ke pintu rumah Anda.</p>
+                    <p class="text-slate-400 max-w-sm mb-6 text-sm sm:text-base">Solusi laundry keluarga modern di Salatiga. Bersih, wangi, rapi, dan diantar langsung ke pintu rumah Anda.</p>
                     <div class="flex gap-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                             <i class="ph-fill ph-instagram-logo text-xl"></i>
@@ -475,14 +484,14 @@
         </div>
     </footer>
 
-    <!-- 9. FLOATING WHATSAPP BUTTON (WAJIB) -->
+    <!-- 9. FLOATING WHATSAPP BUTTON (WAJIB) - DIPINDAHKAN LEBIH TINGGI -->
     <a href="https://wa.me/6285700474280?text=Halo%20Admin%20Lux%20Laundry,%20saya%20mau%20pesan%20laundry%20dari%20alamat..." 
        target="_blank"
-       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl wa-pulse transition-all hover:scale-110 group"
+       class="fixed bottom-24 right-4 sm:bottom-28 sm:right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-2xl wa-pulse transition-all hover:scale-110 group"
        aria-label="Chat WhatsApp">
-        <i class="ph-fill ph-whatsapp-logo text-3xl"></i>
-        <!-- Tooltip -->
-        <span class="absolute right-full mr-3 bg-white text-slate-800 text-sm font-bold px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        <i class="ph-fill ph-whatsapp-logo text-2xl sm:text-3xl"></i>
+        <!-- Tooltip - hidden on mobile -->
+        <span class="hidden sm:block absolute right-full mr-3 bg-white text-slate-800 text-sm font-bold px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
             Chat Admin Sekarang!
         </span>
     </a>
